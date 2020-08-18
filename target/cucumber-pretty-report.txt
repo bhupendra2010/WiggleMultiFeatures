@@ -1,0 +1,6 @@
+Feature: Account Creation
+
+  Scenario:                                        [90m# C:/Users/bhupe/Wiggle/src/test/Resources/account.feature:3[0m
+    [32mGiven [0m[32mUser is on homepage[0m                      [90m# StepDefSwim.user_is_on_homepage()[0m
+    [32mWhen [0m[32mUser fill all the details in account page[0m [90m# StepDefAcc.user_fill_all_the_details_in_account_page()[0m
+    [32mThen [0m[32mUser should able to create his account[0m    [90m# StepDefAcc.user_should_able_to_create_his_account()[0m

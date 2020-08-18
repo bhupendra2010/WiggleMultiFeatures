@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="11.79324">
+<testcase classname="Account Creation" name="" time="11.79324">
+<system-out><![CDATA[Given User is on homepage...................................................passed
+When User fill all the details in account page..............................passed
+Then User should able to create his account.................................passed
+]]></system-out>
+</testcase>
+</testsuite>
