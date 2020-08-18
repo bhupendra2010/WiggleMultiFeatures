@@ -1,57 +1,69 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/Users/bhupe/Wiggle/src/test/Resources/account.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/Users/bhupe/Wiggle/src/test/Resources/footwear.feature");
 formatter.feature({
   "line": 1,
-  "name": "Account Creation",
+  "name": "User want to buy footwear",
   "description": "",
-  "id": "account-creation",
+  "id": "user-want-to-buy-footwear",
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 8191311400,
+  "duration": 8566708800,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 3,
+  "line": 2,
   "name": "",
   "description": "",
-  "id": "account-creation;",
+  "id": "user-want-to-buy-footwear;",
   "type": "scenario",
   "keyword": "Scenario"
 });
 formatter.step({
-  "line": 4,
+  "line": 3,
   "name": "User is on homepage",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 5,
-  "name": "User fill all the details in account page",
+  "line": 4,
+  "name": "User Naviagate to footwear page",
   "keyword": "When "
 });
 formatter.step({
+  "line": 5,
+  "name": "Select required footwear",
+  "keyword": "And "
+});
+formatter.step({
   "line": 6,
-  "name": "User should able to create his account",
+  "name": "User should able to put footwear in basket",
   "keyword": "Then "
 });
 formatter.match({
   "location": "StepDefSwim.user_is_on_homepage()"
 });
 formatter.result({
-  "duration": 166730700,
+  "duration": 155149500,
   "status": "passed"
 });
 formatter.match({
-  "location": "StepDefAcc.user_fill_all_the_details_in_account_page()"
+  "location": "StepDefFootwear.user_Naviagate_to_footwear_page()"
 });
 formatter.result({
-  "duration": 3435177000,
+  "duration": 1426447300,
   "status": "passed"
 });
 formatter.match({
-  "location": "StepDefAcc.user_should_able_to_create_his_account()"
+  "location": "StepDefFootwear.select_required_footwear()"
 });
 formatter.result({
-  "duration": 20800,
+  "duration": 1479447300,
+  "status": "passed"
+});
+formatter.match({
+  "location": "StepDefFootwear.user_should_able_to_put_footwear_in_basket()"
+});
+formatter.result({
+  "duration": 1657180700,
   "status": "passed"
 });
 });

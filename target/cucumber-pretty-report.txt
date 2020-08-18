@@ -1,6 +1,7 @@
-Feature: Account Creation
+Feature: User want to buy footwear
 
-  Scenario:                                        [90m# C:/Users/bhupe/Wiggle/src/test/Resources/account.feature:3[0m
-    [32mGiven [0m[32mUser is on homepage[0m                      [90m# StepDefSwim.user_is_on_homepage()[0m
-    [32mWhen [0m[32mUser fill all the details in account page[0m [90m# StepDefAcc.user_fill_all_the_details_in_account_page()[0m
-    [32mThen [0m[32mUser should able to create his account[0m    [90m# StepDefAcc.user_should_able_to_create_his_account()[0m
+  Scenario:                                         [90m# C:/Users/bhupe/Wiggle/src/test/Resources/footwear.feature:2[0m
+    [32mGiven [0m[32mUser is on homepage[0m                       [90m# StepDefSwim.user_is_on_homepage()[0m
+    [32mWhen [0m[32mUser Naviagate to footwear page[0m            [90m# StepDefFootwear.user_Naviagate_to_footwear_page()[0m
+    [32mAnd [0m[32mSelect required footwear[0m                    [90m# StepDefFootwear.select_required_footwear()[0m
+    [32mThen [0m[32mUser should able to put footwear in basket[0m [90m# StepDefFootwear.user_should_able_to_put_footwear_in_basket()[0m

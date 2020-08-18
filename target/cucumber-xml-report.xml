@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="11.79324">
-<testcase classname="Account Creation" name="" time="11.79324">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="13.284934">
+<testcase classname="User want to buy footwear" name="" time="13.284934">
 <system-out><![CDATA[Given User is on homepage...................................................passed
-When User fill all the details in account page..............................passed
-Then User should able to create his account.................................passed
+When User Naviagate to footwear page........................................passed
+And Select required footwear................................................passed
+Then User should able to put footwear in basket.............................passed
 ]]></system-out>
 </testcase>
 </testsuite>
