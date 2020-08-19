@@ -1,6 +1,8 @@
-Feature: Account Creation
+Feature: User can buy sale products
 
-  Scenario:                                        [90m# C:/Users/bhupe/Wiggle/src/test/Resources/account.feature:3[0m
-    [32mGiven [0m[32mUser is on homepage[0m                      [90m# StepDefSwim.user_is_on_homepage()[0m
-    [32mWhen [0m[32mUser fill all the details in account page[0m [90m# StepDefAcc.user_fill_all_the_details_in_account_page()[0m
-    [32mThen [0m[32mUser should able to create his account[0m    [90m# StepDefAcc.user_should_able_to_create_his_account()[0m
+  Scenario:                                                [90m# C:/Users/bhupe/Wiggle/src/test/Resources/sale.feature:2[0m
+    [32mGiven [0m[32mUser is on homepage[0m                              [90m# StepDefSwim.user_is_on_homepage()[0m
+    [32mWhen [0m[32mUser going on sale page[0m                           [90m# StepDefSale.user_going_on_sale_page()[0m
+    [32mAnd [0m[32mUser find the necessary items[0m                      [90m# StepDefSale.user_find_the_necessary_items()[0m
+    [32mThen [0m[32mUser should put that item in basket[0m               [90m# StepDefSale.user_should_put_that_item_in_basket()[0m
+    [32mAnd [0m[32mUser can goback to mainpage to add some more items[0m [90m# StepDefSale.user_can_goback_to_mainpage_to_add_some_more_items()[0m

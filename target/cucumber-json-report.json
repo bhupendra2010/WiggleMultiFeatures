@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 8191311400,
+              "duration": 8460671700,
               "status": "passed"
             },
             "match": {
@@ -14,19 +14,19 @@
             }
           }
         ],
-        "line": 3,
+        "line": 2,
         "name": "",
         "description": "",
-        "id": "account-creation;",
+        "id": "user-can-buy-sale-products;",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 166730700,
+              "duration": 173698300,
               "status": "passed"
             },
-            "line": 4,
+            "line": 3,
             "name": "User is on homepage",
             "match": {
               "location": "StepDefSwim.user_is_on_homepage()"
@@ -35,35 +35,59 @@
           },
           {
             "result": {
-              "duration": 3435177000,
+              "duration": 2743358400,
               "status": "passed"
             },
-            "line": 5,
-            "name": "User fill all the details in account page",
+            "line": 4,
+            "name": "User going on sale page",
             "match": {
-              "location": "StepDefAcc.user_fill_all_the_details_in_account_page()"
+              "location": "StepDefSale.user_going_on_sale_page()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 20800,
+              "duration": 26900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User find the necessary items",
+            "match": {
+              "location": "StepDefSale.user_find_the_necessary_items()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 93900,
               "status": "passed"
             },
             "line": 6,
-            "name": "User should able to create his account",
+            "name": "User should put that item in basket",
             "match": {
-              "location": "StepDefAcc.user_should_able_to_create_his_account()"
+              "location": "StepDefSale.user_should_put_that_item_in_basket()"
             },
             "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 51200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User can goback to mainpage to add some more items",
+            "match": {
+              "location": "StepDefSale.user_can_goback_to_mainpage_to_add_some_more_items()"
+            },
+            "keyword": "And "
           }
         ]
       }
     ],
-    "name": "Account Creation",
+    "name": "User can buy sale products",
     "description": "",
-    "id": "account-creation",
+    "id": "user-can-buy-sale-products",
     "keyword": "Feature",
-    "uri": "C:/Users/bhupe/Wiggle/src/test/Resources/account.feature"
+    "uri": "C:/Users/bhupe/Wiggle/src/test/Resources/sale.feature"
   }
 ]

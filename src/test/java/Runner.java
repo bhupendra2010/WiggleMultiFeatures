@@ -3,7 +3,7 @@ import cucumber.api.junit.Cucumber;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "C:\\Users\\bhupe\\Wiggle\\src\\test\\Resources\\account.feature",
+@CucumberOptions(features = "C:\\Users\\bhupe\\Wiggle\\src\\test\\Resources\\sale.feature",
         plugin = {"html:target/cucumber-html-report",
                 "json:target/cucumber-json-report.json",
                 "junit:target/cucumber-xml-report.xml",
