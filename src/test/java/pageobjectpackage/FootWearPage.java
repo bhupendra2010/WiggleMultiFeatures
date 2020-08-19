@@ -7,6 +7,7 @@ import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.List;
 import java.util.Random;
@@ -46,14 +47,15 @@ public class FootWearPage extends DriverFactory {
         driver.findElement(By.cssSelector("button[class='bem-left-hand-navigation__option-button']")).click();
 
     }
-    public void choosefootwear(){
-        JavascriptExecutor jj=(JavascriptExecutor)driver;
-        jj.executeScript("window.scrollBy(0,200)");
+    public void choosefootwear() throws InterruptedException {
+       //JavascriptExecutor jj=(JavascriptExecutor)driver;
+        //jj.executeScript("window.scrollBy(0,200)");
 
         List<WebElement>footwears=driver.findElements(By.cssSelector("a[class='bem-product-thumb__name--grid']"));
         System.out.println(footwears.size());
         Random random=new Random();
         WebElement randomno=footwears.get(random.nextInt(footwears.size()));
+        Thread.sleep(3000);
         randomno.click();
 
         driver.findElement(By.id("quickBuyButton")).click();

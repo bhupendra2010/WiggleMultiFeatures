@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 8566708800,
+              "duration": 8460671700,
               "status": "passed"
             },
             "match": {
@@ -17,13 +17,13 @@
         "line": 2,
         "name": "",
         "description": "",
-        "id": "user-want-to-buy-footwear;",
+        "id": "user-can-buy-sale-products;",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 155149500,
+              "duration": 173698300,
               "status": "passed"
             },
             "line": 3,
@@ -35,47 +35,59 @@
           },
           {
             "result": {
-              "duration": 1426447300,
+              "duration": 2743358400,
               "status": "passed"
             },
             "line": 4,
-            "name": "User Naviagate to footwear page",
+            "name": "User going on sale page",
             "match": {
-              "location": "StepDefFootwear.user_Naviagate_to_footwear_page()"
+              "location": "StepDefSale.user_going_on_sale_page()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 1479447300,
+              "duration": 26900,
               "status": "passed"
             },
             "line": 5,
-            "name": "Select required footwear",
+            "name": "User find the necessary items",
             "match": {
-              "location": "StepDefFootwear.select_required_footwear()"
+              "location": "StepDefSale.user_find_the_necessary_items()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 1657180700,
+              "duration": 93900,
               "status": "passed"
             },
             "line": 6,
-            "name": "User should able to put footwear in basket",
+            "name": "User should put that item in basket",
             "match": {
-              "location": "StepDefFootwear.user_should_able_to_put_footwear_in_basket()"
+              "location": "StepDefSale.user_should_put_that_item_in_basket()"
             },
             "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 51200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User can goback to mainpage to add some more items",
+            "match": {
+              "location": "StepDefSale.user_can_goback_to_mainpage_to_add_some_more_items()"
+            },
+            "keyword": "And "
           }
         ]
       }
     ],
-    "name": "User want to buy footwear",
+    "name": "User can buy sale products",
     "description": "",
-    "id": "user-want-to-buy-footwear",
+    "id": "user-can-buy-sale-products",
     "keyword": "Feature",
-    "uri": "C:/Users/bhupe/Wiggle/src/test/Resources/footwear.feature"
+    "uri": "C:/Users/bhupe/Wiggle/src/test/Resources/sale.feature"
   }
 ]
