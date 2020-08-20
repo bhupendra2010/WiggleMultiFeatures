@@ -1,8 +1,43 @@
+Feature: Account Creation
+
+  @SanityTest
+  Scenario:                                        [90m# account.feature:4[0m
+    [32mGiven [0m[32mUser is on homepage[0m                      [90m# StepDefSwim.user_is_on_homepage()[0m
+    [32mWhen [0m[32mUser fill all the details in account page[0m [90m# StepDefAcc.user_fill_all_the_details_in_account_page()[0m
+    [32mThen [0m[32mUser should able to create his account[0m    [90m# StepDefAcc.user_should_able_to_create_his_account()[0m
 Feature: User can buy sale products
 
-  Scenario:                                                [90m# C:/Users/bhupe/Wiggle/src/test/Resources/sale.feature:2[0m
+  @RegressionTest
+  Scenario:                                                [90m# sale.feature:4[0m
     [32mGiven [0m[32mUser is on homepage[0m                              [90m# StepDefSwim.user_is_on_homepage()[0m
-    [32mWhen [0m[32mUser going on sale page[0m                           [90m# StepDefSale.user_going_on_sale_page()[0m
-    [32mAnd [0m[32mUser find the necessary items[0m                      [90m# StepDefSale.user_find_the_necessary_items()[0m
-    [32mThen [0m[32mUser should put that item in basket[0m               [90m# StepDefSale.user_should_put_that_item_in_basket()[0m
-    [32mAnd [0m[32mUser can goback to mainpage to add some more items[0m [90m# StepDefSale.user_can_goback_to_mainpage_to_add_some_more_items()[0m
+    [31mWhen [0m[31mUser going on sale page[0m                           [90m# StepDefSale.user_going_on_sale_page()[0m
+      [31morg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"a[data-tracking-name='Swimwear']"}
+        (Session info: chrome=84.0.4147.125)
+      For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+      Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+      System info: host: 'LAPTOP-98TS530D', ip: '192.168.0.29', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+      Driver info: org.openqa.selenium.chrome.ChromeDriver
+      Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.125, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\Users\bhupe\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60888}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+      Session ID: e7ead76e424e145b285fc2d6ae5ed117
+      *** Element info: {Using=css selector, value=a[data-tracking-name='Swimwear']}
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+      	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+      	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+      	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+      	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+      	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+      	at pageobjectpackage.SalePage.saleoption(SalePage.java:24)
+      	at stepdefinationpackage.StepDefSale.user_going_on_sale_page(StepDefSale.java:11)
+      	at ✽.When User going on sale page(sale.feature:6)
+      [0m
+    [36mAnd [0m[36mUser find the necessary items[0m                      [90m# StepDefSale.user_find_the_necessary_items()[0m
+    [36mThen [0m[36mUser should put that item in basket[0m               [90m# StepDefSale.user_should_put_that_item_in_basket()[0m
+    [36mAnd [0m[36mUser can goback to mainpage to add some more items[0m [90m# StepDefSale.user_can_goback_to_mainpage_to_add_some_more_items()[0m

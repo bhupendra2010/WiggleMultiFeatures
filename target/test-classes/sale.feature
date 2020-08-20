@@ -1,4 +1,6 @@
 Feature: User can buy sale products
+
+  @RegressionTest
   Scenario:
     Given User is on homepage
     When User going on sale page

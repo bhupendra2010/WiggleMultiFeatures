@@ -1,5 +1,6 @@
 Feature: Account Creation
 
+  @SanityTest
   Scenario:
     Given User is on homepage
     When User fill all the details in account page
